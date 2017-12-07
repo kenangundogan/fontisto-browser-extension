@@ -26,6 +26,13 @@
     }
 }
 
+#icon-search-result{ display:none; }
+.icon-category-list{
+    .info{
+        border-bottom: solid 1px #dedede; padding-bottom: 20px; margin-bottom: 20px;
+        .result{ font-size: 16px; font-weight:bold;color: #fff; display:block;}
+    }
+}
 ul.icon-list{
     width: 100%; display: flex; flex-wrap: wrap;
     li{
@@ -37,6 +44,7 @@ ul.icon-list{
         &:last-child(){margin-right: 0px;}
         &:hover{background-color: #dedede;}
         i{color:#999;}
+        .name,.unicode{display: none;}
     }
 }
 

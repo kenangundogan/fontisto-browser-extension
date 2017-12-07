@@ -243,6 +243,19 @@ code {
       background-color: #F75454;
       opacity: 1; }
 
+#icon-search-result {
+  display: none; }
+
+.icon-category-list .info {
+  border-bottom: solid 1px #dedede;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+  .icon-category-list .info .result {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: block; }
+
 ul.icon-list {
   width: 100%;
   display: -webkit-box;
@@ -277,6 +290,8 @@ ul.icon-list {
       background-color: #dedede; }
     ul.icon-list li i {
       color: #999; }
+    ul.icon-list li .name, ul.icon-list li .unicode {
+      display: none; }
 
 .icon-modal, .icon-detail {
   width: 100%;

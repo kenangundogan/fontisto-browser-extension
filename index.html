@@ -14,6 +14,7 @@
     <meta name="theme-color" content="#F75454">
     <link href="assets/css/style.min.css" rel="stylesheet">
     <link href="http://fontisto.com/assets/css/fontisto/fontisto.min.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/simple-scrollbar.js"></script>
     <script src="assets/js/style.js"></script>
   </head>
@@ -24,63 +25,28 @@
       <a href="http://fontisto.com" target="_blank" class="logo-symbol"></a>
       <div class="content">
         <a href="http://fontisto.com" target="_blank" class="logo"></a>
+        <!--search-->
         <div class="icon-search">
             <i class="search"></i>
             <i class="close"></i>
             <input type="text" id="iconSearchInput" placeholder="Search for names.." title="Type in a name">
         </div>
+
+        <!-- icon result list -->
+        <div id="icon-search-result">
+          <ul class="icon-category-list">
+              <li>
+                  <div class="info">
+                      <span class="result" style="display: block;">Search result for "<i></i>"</span>
+                  </div>
+                  <ul class="icon-list"></ul>
+              </li>
+          </ul>
+        </div>
+
         <section style="height: 328px; width: calc(100% + 18px); display: inline-block; padding-right:10px;" ss-container>
-          <ul class="icon-list">
-            <li><i class="fi fi-500px" data-name="500px" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-amazon" data-name="amazon" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-ampproject" data-name="ampproject" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-android" data-name="android" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-angularjs" data-name="500px" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-apple" data-name="apple" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-behance" data-name="behance" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-facebook" data-name="facebook" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-twitter" data-name="twitter" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-google" data-name="google" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-500px" data-name="500px" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-amazon" data-name="amazon" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-ampproject" data-name="ampproject" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-android" data-name="android" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-angularjs" data-name="500px" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-apple" data-name="apple" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-behance" data-name="behance" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-facebook" data-name="facebook" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-twitter" data-name="twitter" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-google" data-name="google" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-500px" data-name="500px" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-amazon" data-name="amazon" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-ampproject" data-name="ampproject" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-android" data-name="android" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-angularjs" data-name="500px" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-apple" data-name="apple" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-behance" data-name="behance" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-facebook" data-name="facebook" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-twitter" data-name="twitter" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-google" data-name="google" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-500px" data-name="500px" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-amazon" data-name="amazon" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-ampproject" data-name="ampproject" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-android" data-name="android" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-angularjs" data-name="500px" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-apple" data-name="apple" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-behance" data-name="behance" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-facebook" data-name="facebook" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-twitter" data-name="twitter" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-google" data-name="google" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-500px" data-name="500px" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-amazon" data-name="amazon" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-ampproject" data-name="ampproject" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-android" data-name="android" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-angularjs" data-name="500px" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-apple" data-name="apple" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-behance" data-name="behance" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-facebook" data-name="facebook" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-twitter" data-name="twitter" data-unicode="\e90a"></i></li>
-            <li><i class="fi fi-google" data-name="google" data-unicode="\e90a"></i></li>
+          <ul class="icon-category-list icon-list" id="icon-list">
+           
           </ul>
         </section>
       </div>
@@ -90,7 +56,7 @@
     </div>
 
 
-    <div class="icon-modal hide icon-modal-content">
+    <div id="icon-modal" class="icon-modal hide">
         
         <div class="wrapper">
         <span class="close"></span>
@@ -101,8 +67,6 @@
             <span class="description">
                 <span class="secondary-color">Unicode:</span>
                 <span class="primary-color unicode"> "\e90b</span>
-                <span class="secondary-color">Categories: </span>
-                <span class="primary-color category-name">Brand icons </span>
             </span>
         </div>
         <!--left end-->
@@ -121,6 +85,5 @@
         <!--right end-->
         </div>
 </div>
-
   </body>
 </html>
