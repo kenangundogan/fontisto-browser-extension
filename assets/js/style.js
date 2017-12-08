@@ -20,11 +20,11 @@ function ajax_get(url, callback) {
 ajax_get('assets/json/fontisto-icon-list.json', function (data) {
     var html = '';
     for (var i = 0; i < data.fontisto.icons.length; i++) {
-        html += '<li>'
-        html += '<i id="fi" class= "fi fi-' + data.fontisto.icons[i].name + '"></i>'
-        html += '<span class="name">' + data.fontisto.icons[i].name + '</span>'
-        html += '<span class="unicode">' + data.fontisto.icons[i].unicode + '</span>'
-        html += '</li>'
+        html += '<li>';
+        html += '<i id="fi" class= "fi fi-' + data.fontisto.icons[i].name + '"></i>';
+        html += '<span class="name">' + data.fontisto.icons[i].name + '</span>';
+        html += '<span class="unicode">' + data.fontisto.icons[i].unicode + '</span>';
+        html += '</li>';
     }
     html += '';
     document.getElementById("icon-list").innerHTML = html;
