@@ -2,13 +2,23 @@
   "manifest_version": 2,
 
   "name": "Fontisto",
+  "short_name": "Fontisto icon font",
   "description": "iconic font and css toolkit",
-  "version": "1.0",
+  "version": "1.6",
 
   "browser_action": {
-    "default_icon": "assets/images/touch/fontisto-128.png",
-    "default_popup": "index.html"
+    "default_icon": "assets/images/touch-icon/fontisto-128.png",
+    "default_popup": "popup.html",
+    "default_title": "Fontisto"
   },
+
+  "icons": {
+    "128": "assets/images/touch-icon/fontisto-128.png",
+    "48": "assets/images/touch-icon/fontisto-48.png",
+    "38": "assets/images/touch-icon/fontisto-38.png",
+    "16": "assets/images/touch-icon/fontisto-16.png"
+ },
+
   "permissions": [
     "activeTab",
     "storage"

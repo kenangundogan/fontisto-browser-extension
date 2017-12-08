@@ -22,8 +22,8 @@ ajax_get('assets/json/fontisto-icon-list.json', function (data) {
     for (var i = 0; i < data.fontisto.icons.length; i++) {
         html += '<li>'
         html += '<i id="fi" class= "fi fi-' + data.fontisto.icons[i].name + '"></i>'
-        html += '<span class="name">'+ data.fontisto.icons[i].name +'</span>'
-        html += '<span class="unicode">'+ data.fontisto.icons[i].unicode +'</span>'
+        html += '<span class="name">' + data.fontisto.icons[i].name + '</span>'
+        html += '<span class="unicode">' + data.fontisto.icons[i].unicode + '</span>'
         html += '</li>'
     }
     html += '';
@@ -51,7 +51,7 @@ $(document).ready(function () {
             $(".icon-modal").addClass("show");
             $(".icon-modal .left i").removeAttr("class").addClass(iconId);
             $(".icon-modal .name").text(iconName);
-            $(".icon-modal .unicode").text(iconUnicode);
+            $(".icon-modal .unicode").text('"' + '\\' + iconUnicode + '"');
             $(".icon-modal code .class-p").text(iconId);
             $(".icon-modal .description .category-name").text(categoryName);
         }
@@ -69,6 +69,28 @@ $(document).ready(function () {
         $("#icon-search-result, .icon-list").removeAttr("style");
     });
 
+    // clipbord text copy (plugin)
+    $(".copy-btn").on('click', function (e) {
+        $(".copy-btn").text("copy").removeClass("selected");
+        $(this).text("copied").addClass("selected");
+    });
+
+    if ($(".copy-btn").length > 0) {
+        console.log("true");
+        var clipboard = new Clipboard('.copy-btn');
+
+        clipboard.on('success', function (e) {
+            console.log(e);
+        });
+
+        clipboard.on('error', function (e) {
+            console.log(e);
+        });
+    }
+    else {
+        console.log("false");
+    }
+
 });
 
 setTimeout(function () {
@@ -76,11 +98,11 @@ setTimeout(function () {
     $('.icon-list li').each(function () {
         icons[$(this).find('span.name').text()] = $(this).clone();
     });
-    
+
     $('#iconSearchInput').on('input propertychange', function () {
         var term = this.value.toLowerCase(),
             matchedIcons = [];
-    
+
         // if term is empty return back
         if (term == '') {
             $('#icon-search-result').hide();
@@ -90,13 +112,14 @@ setTimeout(function () {
             $('#icon-search-result').show();
             $('.icon-category-list').not('#icon-search-result .icon-category-list').hide();
         }
-    
-        $.each(icons, function (name, icon) {;
+
+        $.each(icons, function (name, icon) {
+            ;
             if (name.search(term) > -1) {
                 matchedIcons.push(icon);
             }
         });
-    
+
         // term text append to result div
         $('#icon-search-result .result i').text(term);
         $('#icon-search-result .icon-list').empty();
@@ -104,7 +127,7 @@ setTimeout(function () {
             $(icon).appendTo('#icon-search-result .icon-list');
         });
     });
-}, 2900);
+}, 1000);
 
 
 

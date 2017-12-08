@@ -268,7 +268,7 @@ ul.icon-list {
   ul.icon-list li {
     cursor: pointer;
     margin: 0px 7px 7px 7px;
-    background-color: #fff;
+    background-color: #da4142;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -287,13 +287,15 @@ ul.icon-list {
     ul.icon-list li:last-child() {
       margin-right: 0px; }
     ul.icon-list li:hover {
-      background-color: #dedede; }
+      background-color: #fff; }
+      ul.icon-list li:hover i {
+        color: #333; }
     ul.icon-list li i {
-      color: #999; }
+      color: #fff; }
     ul.icon-list li .name, ul.icon-list li .unicode {
       display: none; }
 
-.icon-modal, .icon-detail {
+.icon-modal {
   width: 100%;
   position: relative;
   line-height: 1.3;
@@ -306,7 +308,7 @@ ul.icon-list {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
-  .icon-modal .close, .icon-detail .close {
+  .icon-modal .close {
     cursor: pointer;
     position: absolute;
     right: 20px;
@@ -320,49 +322,49 @@ ul.icon-list {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40%; }
-    .icon-modal .close:hover, .icon-detail .close:hover {
+    .icon-modal .close:hover {
       background-color: #F78054; }
-  .icon-modal .left, .icon-detail .left {
+  .icon-modal .left {
     width: 100%;
-    background-color: #dedede;
+    background-color: #fff;
     padding: 20px;
     text-align: center; }
-    .icon-modal .left i, .icon-detail .left i {
+    .icon-modal .left i {
       margin-bottom: 10px; }
-    .icon-modal .left .fi, .icon-detail .left .fi {
+    .icon-modal .left .fi {
       font-size: 110px; }
-    .icon-modal .left .name, .icon-detail .left .name {
+    .icon-modal .left .name {
       font-weight: bold;
       font-size: 24px;
       display: block;
       margin-bottom: 10px; }
-  .icon-modal .right, .icon-detail .right {
+  .icon-modal .right {
     width: 100%;
     background-color: #f1f1f1;
     padding: 20px; }
-    .icon-modal .right > span, .icon-detail .right > span {
+    .icon-modal .right > span {
       display: block;
       margin-bottom: 10px; }
-    .icon-modal .right .title, .icon-detail .right .title {
+    .icon-modal .right .title {
       font-size: 24px;
       font-weight: bold;
       color: #333; }
-    .icon-modal .right .description, .icon-detail .right .description {
+    .icon-modal .right .description {
       font-size: 14px;
       color: #666; }
-    .icon-modal .right .note, .icon-detail .right .note {
+    .icon-modal .right .note {
       font-size: 14px;
       color: #666; }
-    .icon-modal .right pre code, .icon-detail .right pre code {
+    .icon-modal .right pre code {
       background-color: #fff;
       border-radius: 10px;
       line-height: 0;
       margin-bottom: 20px; }
-    .icon-modal .right pre .copy-btn, .icon-detail .right pre .copy-btn {
+    .icon-modal .right pre .copy-btn {
       background-color: #f1f1f1; }
-      .icon-modal .right pre .copy-btn:hover, .icon-modal .right pre .copy-btn.selected, .icon-detail .right pre .copy-btn:hover, .icon-detail .right pre .copy-btn.selected {
+      .icon-modal .right pre .copy-btn:hover, .icon-modal .right pre .copy-btn.selected {
         background-color: #F75454 !important; }
-  .icon-modal .wrapper, .icon-detail .wrapper {
+  .icon-modal .wrapper {
     position: relative;
     min-height: 350px;
     padding: 20px;
@@ -374,7 +376,7 @@ ul.icon-list {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .icon-modal.show, .icon-detail.show {
+  .icon-modal.show {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -387,23 +389,23 @@ ul.icon-list {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3); }
   @media (min-width: 768px) {
-    .icon-modal .left, .icon-detail .left {
+    .icon-modal .left {
       width: 40%;
       padding: 50px;
       border: none;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px; }
-    .icon-modal .right, .icon-detail .right {
+    .icon-modal .right {
       width: 60%;
       padding: 50px;
       border: none;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px; } }
   @media (max-width: 768px) {
-    .icon-modal .left, .icon-detail .left {
+    .icon-modal .left {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px; }
-    .icon-modal .right, .icon-detail .right {
+    .icon-modal .right {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px; } }
 
@@ -484,7 +486,7 @@ body {
     top: 0;
     left: 0;
     background-position: center;
-    background-image: url("../images/icon-pattern.png");
+    background-image: url("../images/background/icon-pattern.png");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .5; }
@@ -498,7 +500,7 @@ body {
     margin: auto;
     width: 100%;
     height: 270px;
-    background-image: url("../images/masthead-background.svg");
+    background-image: url("../images/background/masthead-background.svg");
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: center; }
@@ -509,7 +511,7 @@ body {
   top: 0;
   height: 50px;
   width: 160px;
-  background-image: url("../images/icon-background.svg");
+  background-image: url("../images/icon/icon-background.svg");
   background-repeat: no-repeat;
   background-size: cover; }
   .logo-symbol:before {

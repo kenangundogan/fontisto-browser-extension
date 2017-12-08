@@ -23,7 +23,7 @@ body{
         width: 100%; height: 100%;
         position: absolute; top: 0; left: 0;
         background-position: center;
-        background-image: url("../images/icon-pattern.png");
+        background-image: url("../images/background/icon-pattern.png");
         background-repeat: no-repeat;
         background-size: cover;
         opacity: .5;
@@ -32,7 +32,7 @@ body{
         content: "";
         position: absolute; z-index: -1; right: 0; left: 0px; top: 0px; margin:auto;
         width: 100%; height: 270px;
-        background-image: url("../images/masthead-background.svg");
+        background-image: url("../images/background/masthead-background.svg");
         background-repeat: no-repeat; background-size: 90%; background-position: center;
     }
 }
@@ -40,7 +40,7 @@ body{
 .logo-symbol{
     position: fixed; right: 0; top: 0;
     height: 50px; width: 160px;
-    background-image: url("../images/icon-background.svg");
+    background-image: url("../images/icon/icon-background.svg");
     background-repeat: no-repeat; background-size: cover;
     &:before{
         content: "";
