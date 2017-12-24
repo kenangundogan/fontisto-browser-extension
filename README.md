@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://fontisto.com/browser-addon"><img src="http://fontisto.com/assets/images/browser-addon-screen-shot/fontisto-browser-extention-1280x800-2.png"></a>
+  <a href="http://fontisto.com/browser-addon"><img src="http://fontisto.com/assets/images/browser-addon-screen-shot/fontisto-browser-extension-1280x800-2.png"></a>
   
   <p align="center">
    Fontisto browser addons (chrome, firefox, opera)
