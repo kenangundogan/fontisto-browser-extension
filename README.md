@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://fontisto.com/browser-addon"><img src="http://fontisto.com/assets/images/browser-addon-screen-shot/fontisto-chrome-extentions-1280x800-2.png"></a>
+  <a href="http://fontisto.com/browser-addon"><img src="http://fontisto.com/assets/images/browser-addon-screen-shot/fontisto-browser-extention-1280x800-2.png"></a>
   
   <p align="center">
    Fontisto browser addons (chrome, firefox, opera)
@@ -13,7 +13,7 @@
 
 ## Fontisto (The iconic font and CSS toolkit)
 
-Fontisto is a full suite of 377+ pictographic icons for easy scalable vector graphics on websites,
+Fontisto is a full suite of 552+ pictographic icons for easy scalable vector graphics on websites,
 created and maintained by [Kenan Gündoğan](https://www.linkedin.com/in/kenangundogan).
 Stay up to date with the latest release and announcements on Twitter:
 [@fontisto](http://twitter.com/fontisto).
